@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleezah Skin Care - Luxurious Beauty for Your Skin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="video-bg">
+            <div class="particle particle1"></div>
+            <div class="particle particle2"></div>
+            <div class="particle particle3"></div>
+            <div class="particle particle4"></div>
+            <div class="particle particle5"></div>
+        </div>
+        <nav>
+            <div class="logo animate-pulse"><a href="index.html"><img src="logo.png" alt="Aleezah Skin Care Logo"></div></a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="#home" class="animate-slide-down">Home</a></li>
+                <li><a href="#about" class="animate-slide-down">About</a></li>
+                <li><a href="#products" class="animate-slide-down">Products</a></li>
+                <li><a href="#contact" class="animate-slide-down">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-fade-in">Welcome to Aleezah Skin Care</h1>
+            <p class="animate-slide-up">Hello beautiful! We're thrilled you've found us. At Aleezah, we believe everyone deserves to feel confident in their own skin. Our organic, science-backed products are crafted with love to nourish, rejuvenate, and bring out your natural glow. Join our community of radiant skin lovers today!</p>
+            <a href="#about" class="cta-button animate-bounce">Discover Your Glow</a>
+        </div>
+
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Aleezah Skin Care</h2>
+            <p>At Aleezah Skin Care, we believe in the power of nature and science combined to create products that nourish and rejuvenate your skin. Our face creams and treatments are made with the finest ingredients for unparalleled results.</p>
+            <div class="features">
+                <div class="feature">
+                    <h3>Natural Ingredients</h3>
+                    <p>100% organic and cruelty-free.</p>
+                </div>
+                <div class="feature">
+                    <h3>Scientifically Proven</h3>
+                    <p>Backed by dermatological research.</p>
+                </div>
+                <div class="feature">
+                    <h3>Luxurious Feel</h3>
+                    <p>Silk-like texture for ultimate comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card animate-slide-up" data-price="₦9,000" data-description="A luxurious hydrating face cream that nourishes and rejuvenates your skin with natural ingredients.">
+                    <img src="FACE CREAM.jpg" alt="Hydrating Face Cream">
+                    <h3>Hydrating Face Cream</h3>
+                    <p>₦9,000</p>
+                    <button class="cta-button add-to-cart-btn" onclick="openModal('Hydrating Face Cream')">Add to Cart</button>
+                </div>
+                <div class="product-card animate-slide-up" data-price="₦7,000" data-description="Indulge in the rich, chocolate-infused glow butter that enhances your skin's radiance and smoothness.">
+                    <img src="Choco glow butter.jpg" alt="Choco Glow Butter">
+                    <h3>Choco Glow Butter</h3>
+                    <p>₦7,000</p>
+                    <button class="cta-button add-to-cart-btn" onclick="openModal('Choco Glow Butter')">Add to Cart</button>
+                </div>
+                <div class="product-card animate-slide-up" data-price="₦28,000" data-description="Experience the pure essence of Kamama Milk, a nourishing elixir for deep hydration and skin repair.">
+                    <img src="kamama.png" alt="Kamama Milk">
+                    <h3>Kamama Milk</h3>
+                    <p>₦28,000</p>
+                    <button class="cta-button add-to-cart-btn" onclick="openModal('Kamama Milk')">Add to Cart</button>
+                </div>
+                <div class="product-card animate-slide-up" data-price="₦11,000" data-description="Cleanse and rejuvenate with our black herbal soap, crafted from natural herbs for a gentle, effective cleanse.">
+                    <img src="black.png" alt="Aleezah Black Herbal Soap">
+                    <h3>Aleezah Black Herbal Soap</h3>
+                    <p>₦11,000</p>
+                    <button class="cta-button add-to-cart-btn" onclick="openModal('Aleezah Black Herbal Soap')">Add to Cart</button>
+                </div>
+                <div class="product-card animate-slide-up" data-price="₦28,000" data-description="Unlock the magic of Snow Potion Oil, a potent blend that brightens and revitalizes your skin tone.">
+                    <img src="snow potion oil.jpg" alt="Snow Potion Oil">
+                    <h3>Snow Potion Oil</h3>
+                    <p>₦28,000</p>
+                    <button class="cta-button add-to-cart-btn" onclick="openModal('Snow Potion Oil')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-media">
+                    <a href="https://web.facebook.com/AleezahOrganicCosmeceuticals/?_rdc=1&_rdr#" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="mailto:mbachinelo@gmail.com" class="social-icon">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://instagram.com/Aleezahsskincare" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2026 Aleezah Skin Care. All rights reserved.</p>
+                    <p>Made with ❤️ By <a href="https://bit.ly/HiveryTech">HiveryTech Ltd</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Product Details -->
+    <div id="productModal" class="modal">
+        <div class="modal-content animate-zoom-in">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+            <p id="modalPrice"></p>
+            <form id="orderForm" class="order-form" action="https://formspree.io/f/mwvpywpn" method="POST">
+                <input type="hidden" id="product" name="product">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone (e.g., +2341234567890):</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+234" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="delivery">Delivery Option:</label>
+                    <select id="delivery" name="delivery" required>
+                        <option value="">Select...</option>
+                        <option value="Home Delivery">Home Delivery</option>
+                        <option value="Store Pickup">Store Pickup</option>
+                    </select>
+                </div>
+                <button type="submit" class="cta-button">Place Order</button>
+            </form>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js"></script>
+</body>
+</html>
