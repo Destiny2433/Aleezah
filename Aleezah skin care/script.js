@@ -1,6 +1,7 @@
 // Modal functionality
 function openModal(productName) {
     document.getElementById('modalTitle').textContent = productName;
+    document.getElementById('product').value = productName;
     document.getElementById('productModal').style.display = 'block';
 }
 
